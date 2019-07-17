@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>addp-rpc-all</artifactId>
+        <groupId>com.nix.jingxun</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>addp-rpc-producer</artifactId>
+    <packaging>jar</packaging>
+    <name>addp-rpc-producer</name>
+    <dependencies>
+        <dependency>
+            <groupId>com.nix.jingxun</groupId>
+            <artifactId>addp-rpc-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.1.7.RELEASE</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+            <version>2.1.6.RELEASE</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+    <distributionManagement>
+        <repository>
+            <id>rdc-releases</id>
+            <url>https://repo.rdc.aliyun.com/repository/78522-release-cVkixx/</url>
+        </repository>
+        <snapshotRepository>
+            <id>rdc-snapshots</id>
+            <url>https://repo.rdc.aliyun.com/repository/78522-snapshot-OSsyWP/</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>
