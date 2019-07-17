@@ -1,8 +1,5 @@
 package com.nix.jingxun.addp.rpc.consumer;
-import com.alipay.remoting.InvokeCallback;
-import com.nix.jingxun.addp.rpc.consumer.proxy.Invoke;
-//import com.nix.jingxun.addp.web.iservice.IMemberService;
-//import com.nix.jingxun.addp.web.model.MemberModel;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +8,6 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.io.IOException;
-import java.util.concurrent.Executor;
 import java.util.concurrent.TimeoutException;
 
 /**
@@ -27,37 +23,15 @@ public class ConsumerTest {
 
     @Test
     public void main() throws TimeoutException, InterruptedException {
-//        hello.sayHello1(Collections.emptyList());
-//        User user = hello.updateUser(new User("99",20,new User("100",19,null)),null);
-//        System.out.println(user.getChild());
+
     }
 
-//    @Test
-//    public void transactionalTest() {
-//        IMemberService memberService = applicationContext.getBean(IMemberService.class);
-//        MemberModel memberModel = memberService.add("test7","test");
-//        System.out.println("member==" + memberModel.toString());
-//    }
-//
-//    @Test
-//    public void asyncTest() throws InterruptedException, IOException {
-//        IMemberService memberService = applicationContext.getBean(IMemberService.class);
-//        Invoke.invoke(memberService, "login", new Object[]{"test7", "test"}, new String[]{String.class.getName(), String.class.getName()}, new InvokeCallback() {
-//            @Override
-//            public void onResponse(Object result) {
-//                System.out.println(result);
-//            }
-//
-//            @Override
-//            public void onException(Throwable e) {
-//                e.printStackTrace();
-//            }
-//
-//            @Override
-//            public Executor getExecutor() {
-//                return null;
-//            }
-//        });
-//        System.in.read(new byte[10]);
-//    }
+    @Test
+    public void transactionalTest() {
+    }
+
+    @Test
+    public void asyncTest() throws InterruptedException, IOException {
+
+    }
 }
